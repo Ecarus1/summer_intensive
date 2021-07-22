@@ -2,12 +2,12 @@
 
 
 @section('title')
-    Авторизация
+    Регистрация
 @endsection
 
 
 @section('link')
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/registration.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
 
@@ -16,7 +16,7 @@
         @csrf
         <div class="title">Привет</div>
 
-        <div class="subtitle">Давай авторизируемся!</div>
+        <div class="subtitle">Давай зарегистрируемся!</div>
 
         <div class="input-container ic1">
             <input id="name" name="name" class="input" type="text" placeholder=" " />
@@ -30,9 +30,9 @@
             <label for="lastname" class="placeholder">Пароль</label>
         </div>
         {{-- <button type="submit" class="submit">Авторизироваться</button> --}}
-        <input type="submit" class="submit" name="sendMe" value="Авторизироваться">
+        <input type="submit" class="submit" name="sendMe" value="Регистрация">
         <div class="div_registration">
-            <a href="/registration" class="href_registration">Регистрация</a>
+            <a href="/registration" class="href_registration">Авторизация</a>
         </div>
     </form>
 @endsection
